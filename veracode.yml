@@ -95,3 +95,15 @@ veracode_iac_secrets_scan:
     commands:
       - "Veracode IAC Scan"
 
+container_security:
+  push:
+    trigger: true
+    branches_to_run:
+      - '*'
+  pull_request:
+    trigger: true
+    action:
+      - opened
+      - synchronize
+    target_branch:
+      - default_branch
