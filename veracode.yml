@@ -94,17 +94,3 @@ veracode_iac_secrets_scan:
     trigger: false
     commands:
       - "Veracode IAC Scan"
-
-  veracode_container_security_scan:
-    push:
-      trigger: true
-      branches_to_run:
-        - '*'
-      branches_to_exclude:
-    pull_request:
-      trigger: true
-      action:
-        - opened
-        - synchronize
-      target_branch:
-        - default_branch
