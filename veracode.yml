@@ -40,7 +40,7 @@ veracode_static_scan:
 
 veracode_sca_scan:
   push: 
-    trigger: false
+    trigger: true
     # Please only specify either branches_to_run or branches_to_exclude
     # Entering both will only execute branches_to_run
     # Leaving them both blank means this will never run
@@ -48,12 +48,12 @@ veracode_sca_scan:
       - '*'
     branches_to_exclude:
   pull_request:
-    trigger: true
+    trigger: false
     action:
       - opened
       - synchronize
     target_branch:
-      - 'specific different branch'
+      - 'default_branch'
   # If the break_build_on_error is set to true, the build will break if the scan failed to complete or with an error, no libraries were found, 
   # or no build system was found and the error_message will be displayed.
   break_build_on_error: false
