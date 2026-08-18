@@ -8,7 +8,7 @@ veracode_static_scan:
       - 'Lower branch'
     branches_to_exclude:
   pull_request:
-    trigger: false
+    trigger: true
     action:
       - opened
       - synchronize
@@ -45,10 +45,10 @@ veracode_sca_scan:
     # Entering both will only execute branches_to_run
     # Leaving them both blank means this will never run
     branches_to_run:
-      - 'Lower branch'
+      - 'lower branch'
     branches_to_exclude:
   pull_request:
-    trigger: false
+    trigger: true
     action:
       - opened
       - synchronize
