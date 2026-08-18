@@ -47,7 +47,7 @@ veracode_sca_scan:
     branches_to_run:
       - '*'
     branches_to_exclude:
-  pull_request:
+  pull_request: 
     trigger: false
     action:
       - opened
