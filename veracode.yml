@@ -14,7 +14,7 @@ veracode_static_scan:
       - opened
       - synchronize
     target_branch:
-      - default_branch 
+      - 'test_new' 
   # If the analysis_on_platform is set to true,
   # Veracode will save your last scan result, on the default branch, as an application profile with the same name as your scanned repository on the Veracode platform. 
   # If the analysis_on_platform is set to false, scan results will not be saved to the Veracode platform.
@@ -55,7 +55,7 @@ veracode_sca_scan:
       - opened
       - synchronize
     target_branch:
-      - default_branch
+      - 'test_new'
   # If the break_build_on_error is set to true, the build will break if the scan failed to complete or with an error, no libraries were found, 
   # or no build system was found and the error_message will be displayed.
   break_build_on_error: true
