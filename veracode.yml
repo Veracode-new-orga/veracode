@@ -8,7 +8,7 @@ veracode_static_scan:
       - 'Lower branch'
     branches_to_exclude:
   pull_request:
-    trigger: false
+    trigger: false 
     action:
       - opened
       - synchronize
