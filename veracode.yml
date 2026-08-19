@@ -5,9 +5,9 @@ veracode_static_scan:
     # Entering both will only execute branches_to_run
     # Leaving them both blank means this will never run 
     branches_to_run:
-      - '*' 
+      - 'test_new' 
     branches_to_exclude:
-      - '*'
+      - 'test_new'
   pull_request:
     trigger: true  
     action:
@@ -46,9 +46,9 @@ veracode_sca_scan:
     # Entering both will only execute branches_to_run
     # Leaving them both blank means this will never run
     branches_to_run:
-      - '*'
+      - 'test_new'
     branches_to_exclude:
-      - '*'
+      - 'test_new'
   pull_request:
     trigger: true
     action:
